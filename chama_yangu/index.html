@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>chama yangu</title>
+     <link href="style.css"rel="stylesheet"name="text/css">
+ </head>
+ <body>
+     <div class="container">
+     <form  method="POST" name="form"onsubmit="return validated()">
+         <h1 class="head">CHAMA YANGU</h1>
+         <div class="label">Name:</div>
+         <input type="name" name="firstname"placeholder="enter firstname"/>
+         <div class="error message"id="first_error">please input first name</div>
+         <div class ="label">Second Name</div>
+         <input type="name"name="lastname"placeholder="enter lastname"/>
+         <div class="error message"id="last_error">please input second name </div>
+         <div class="label">Gender</div>
+         <div><input type="radio" name="radio-choice-1"id="radio-choice-1"/>
+            <label for="radio-choice-1">Male</label>
+            <input type="radio"name="radio-choice-"id="radio-choice-2"/>
+            <label for="radio-choice-2">Female</label>
+        </div>
+         <br>
+         <div class="'label">Age:</div>
+         <input type="number" name="age"placeholder="your age">
+         <div class="error message"id="age_error">please enter the age using a number</div>
+         <div class="email">EMAIL:</div>
+         <input type="email"name="email"placeholder="example@gmail.com"/>
+         <div class="error message"id="email_error">please enter the correct email</div>
+         <label for="chama"> chama:</label>
+         <select name="chama" id="chama">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+         </select> 
+         <br>
+         <div class="label">Password</div>
+         <input type="password" name="password" placeholder="password"/>
+         <div class="error message" id="password_error">password must be more than 5 charcaters</div>
+         <br>
+         <button type="submit">Register</button>
+         <script src="form.js">
+          </script>
+
+     </form>
+     </div>
+ </body>
+ </html>
